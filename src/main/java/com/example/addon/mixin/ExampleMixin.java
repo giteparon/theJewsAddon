@@ -4,6 +4,7 @@ import com.example.addon.AddonTemplate;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.RunArgs;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.gen.Invoker;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -28,4 +29,5 @@ public abstract class ExampleMixin {
     private void onGameLoaded(RunArgs args, CallbackInfo ci) {
         AddonTemplate.LOG.info("Hello from ExampleMixin!");
     }
+
 }
